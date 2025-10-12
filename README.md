@@ -122,7 +122,7 @@ This project helps students, developers, and enthusiasts strengthen their Linux 
 
 Clone the repository to your system:
 ```bash
-git clone https://github.com/<your-username>/Linux_Command_Line_Mastery.git
+git clone https://github.com/IrfanTech-X/Linux_Command_Line_Mastery.git
 ```
 Then open README.md and start exploring!
 You can press Ctrl + F (or Cmd + F on Mac) to search for any specific command instantly.
