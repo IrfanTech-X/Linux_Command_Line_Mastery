@@ -136,7 +136,7 @@ This project helps students, developers, and enthusiasts strengthen their Linux 
 | `paste` | **Merges lines** from multiple files side by side. | `paste file1 file2` |
 | `tee` | Writes output to **both a file and the screen simultaneously**. | `ls | tee list.txt` |
 
-💬 **Tip:** Use `ls -lh` to see file sizes in a human-readable format and `ls -lt` to sort by modification time.
+💬 **Tip:** To quickly check what’s inside your folder, use `ls -lh` to see file sizes in a human-readable format and `ls -lt` to sort by modification time.
 
 ---
 
