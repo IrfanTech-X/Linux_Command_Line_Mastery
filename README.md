@@ -543,7 +543,11 @@ This project helps students, developers, and enthusiasts strengthen their Linux 
 💬 **Tip:** Use `htop` for a **friendly real-time overview** of CPU, memory, and processes. Combine `journalctl` and `tail -f` for **log monitoring**.
 
 ---
+## 📬 Contributions
 
+Want to add or improve a command?
+Fork the repo and create a pull request — contributions are always welcome!
+---
 ## 🧠 How to Use
 
 Clone the repository to your system:
