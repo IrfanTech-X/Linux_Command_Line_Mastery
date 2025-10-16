@@ -126,23 +126,6 @@ This project helps students, developers, and enthusiasts strengthen their Linux 
 
 ---
 
-## 📦 Package Management
-
-| Command | Description | Example |
-|----------|-------------|----------|
-| `apt update` | Updates the **package list** on Debian/Ubuntu systems — always run this before installing packages. | `sudo apt update` |
-| `apt upgrade` | Upgrades all installed packages to the latest version. | `sudo apt upgrade` |
-| `apt install` | Installs a **new package** from repositories. | `sudo apt install git` |
-| `apt remove` | Removes an installed package but keeps configuration files. | `sudo apt remove nano` |
-| `apt purge` | Removes a package along with its config files. | `sudo apt purge nano` |
-| `yum install` | Installs a package on RHEL/CentOS systems. | `sudo yum install wget` |
-| `dnf update` | Updates all packages on Fedora or newer RHEL systems. | `sudo dnf update` |
-| `snap install` | Installs software using **Snap package manager**. | `sudo snap install code` |
-
-💬 **Tip:** `apt list --installed` shows all packages currently installed on your system.
-
----
-
 ## 🌐 Networking
 
 | Command | Description | Example |
