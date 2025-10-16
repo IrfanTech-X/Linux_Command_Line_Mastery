@@ -1,7 +1,7 @@
 # 🐧 Linux Command Line Mastery
 
 Welcome to **Linux Command Line Mastery** — your all-in-one guide to learning, understanding, and mastering the Linux terminal.  
-This repository contains **300 essential Linux commands**, organized by category with simple explanations and examples.  
+This repository contains **300+ essential Linux commands**, organized by category with simple explanations and examples.  
 
 ---
 
