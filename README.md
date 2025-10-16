@@ -159,6 +159,31 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 💬 **Tip:** To quickly check what’s inside your folder, use `ls -lh` to see file sizes in a human-readable format and `ls -lt` to sort by modification time.
 
 ---
+## ✏️ Editing Files with Nano
+
+| Command | Description | Example |
+|----------|-------------|----------|
+| `nano` | Opens the **Nano text editor** directly in the terminal. It’s simple and beginner-friendly for editing text files. | `nano file.txt` |
+
+### 🧭 Basic Nano Shortcuts
+
+| Shortcut | Action |
+|-----------|---------|
+| `Ctrl + O` | Save changes (Write Out) |
+| `Ctrl + X` | Exit Nano |
+| `Ctrl + G` | Show help |
+| `Ctrl + K` | Cut a line |
+| `Ctrl + U` | Paste a line |
+| `Ctrl + W` | Search text |
+| `Ctrl + C` | Show cursor position |
+
+💡 **Tip:**  
+If the file doesn’t exist, `nano` will automatically create it when you save.  
+Example:  
+```bash
+nano notes.txt
+```
+---
 
 ## ⚙️ System Information
 
