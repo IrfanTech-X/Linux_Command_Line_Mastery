@@ -470,32 +470,41 @@ This project helps students, developers, and enthusiasts strengthen their Linux 
 ---
 ## 📬 Contributions
 
-Want to add or improve a command?
-Fork the repo and create a pull request — contributions are always welcome!
----
-## 🧠 How to Use
+Contributions are always welcome! 🚀  
+If you'd like to **add new commands**, **improve explanations**, or **fix errors**, simply:  
+1. **Fork** this repository  
+2. **Create a branch** for your feature or fix  
+3. **Submit a Pull Request (PR)**  
 
-Clone the repository to your system:
+Your contributions help make this project better for everyone. ❤️  
+
+---
+
+## 🧠 How to Use  
+
+Clone the repository to your local system:  
 ```bash
 git clone https://github.com/IrfanTech-X/Linux_Command_Line_Mastery.git
-```
-Then open README.md and start exploring!
-You can press Ctrl + F (or Cmd + F on Mac) to search for any specific command instantly.
+```  
 
-📊 Progress Tracker
-✅ 80 / 300 Commands Completed
-🕓 Updating frequently — new commands coming soon!
+Open the `README.md` file and start exploring!  
+Use `Ctrl + F` (or `Cmd + F` on Mac) to quickly search for specific commands.  
+
+### 📊 Progress Tracker  
+- ✅ **300+ Commands Completed**  
+- 🕓 **Regularly Updated** — new commands coming soon!  
 
 ---
 
-### 🧑‍💻 Author
+## 👨‍💻 Author  
 
-Irfan Ferdous Siam
-🎓 BSc in CSE, Green University of Bangladesh
-📧 siamtalukdar3@gmail.com
+**Irfan Ferdous Siam**  
+🎓 *BSc in Computer Science & Engineering*  
+*Green University of Bangladesh*  
+📧 **siamtalukdar3@gmail.com**  
 
-⭐ Star this repository if you find it useful and want to support the project!
+⭐ If you find this repository helpful, consider giving it a **star** to support the project!  
 
-“Mastering Linux commands isn’t about memorization — it’s about thinking like the terminal.”
+> “Mastering Linux commands isn’t about memorization — it’s about thinking like the terminal.”  
 
 
