@@ -10,6 +10,24 @@ The Linux command line is powerful — mastering it opens doors to automation, d
 This project helps students, developers, and enthusiasts strengthen their Linux skills through hands-on command examples.
 
 ---
+# 🧑‍💻 Change Username (Recommended - Simple)
+
+### ⏱ Step-by-Step (Takes 2–3 Minutes)
+
+Run these commands one by one in your **Terminal** (`Ctrl + Alt + T`):
+
+| Step | Command | What It Does |
+|------|----------|--------------|
+| 1 | `sudo usermod -l NEWNAME OLDNAME` | Changes username from **OLDNAME** to **NEWNAME** |
+| 2 | `sudo usermod -m -d /home/NEWNAME NEWNAME` | Moves the home folder to `/home/NEWNAME` |
+| 3 | `sudo groupmod -n NEWNAME OLDNAME` | Updates the group name to match the new username |
+| 4 | `sudo chown -R NEWNAME:NEWNAME /home/NEWNAME` | Changes the ownership of all files in the home directory to the new user |
+| 5 | `sudo reboot` | Reboots the system to apply all changes |
+
+💡 **Tip:**  
+Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desired new username**.
+
+---
 
 ## 🗂️ Command Categories
 
