@@ -346,10 +346,10 @@ This project helps students, developers, and enthusiasts strengthen their Linux 
 
 | Command | Description | Example |
 |----------|-------------|----------|
-| `apt update` | Updates the **package index** for Debian-based systems. | `sudo apt update` |
+| `apt update` | Updates the **package list/package** on Debian/Ubuntu systems — always run this before installing packages. | `sudo apt update` |
 | `apt upgrade` | Upgrades **all installed packages** to the latest versions. | `sudo apt upgrade` |
-| `apt install` | Installs a **package** on the system. | `sudo apt install git` |
-| `apt remove` | Removes an installed **package**. | `sudo apt remove nano` |
+| `apt install` | Installs a **new package** on the system from repositories.| `sudo apt install git` |
+| `apt remove` | Removes an installed **package** but keeps configuration files. | `sudo apt remove nano` |
 | `apt purge` | Removes a package **along with its configuration files**. | `sudo apt purge nano` |
 | `apt search` | Searches the **package repository** for a package. | `apt search python3` |
 | `apt show` | Displays **detailed information** about a package. | `apt show git` |
@@ -361,6 +361,7 @@ This project helps students, developers, and enthusiasts strengthen their Linux 
 | `dnf remove` | Removes a package on **Fedora** systems. | `sudo dnf remove vim` |
 | `dnf update` | Updates all packages on Fedora or newer RHEL systems. | `sudo dnf update` |
 | `snap install` | Installs a **Snap package**. | `sudo snap install vlc` |
+| `snap install` | Installs software using **Snap package manager**. | `sudo snap install code` |
 | `snap remove` | Removes a Snap package. | `sudo snap remove vlc` |
 | `flatpak install` | Installs a **Flatpak package**. | `flatpak install flathub org.gimp.GIMP` |
 | `flatpak remove` | Removes a Flatpak package. | `flatpak remove org.gimp.GIMP` |
@@ -368,6 +369,7 @@ This project helps students, developers, and enthusiasts strengthen their Linux 
 | `apt list --installed` | Lists all **installed packages** on the system. | `apt list --installed` |
 | `rpm -qa` | Lists all **installed RPM packages**. | `rpm -qa` |
 
+💬 **Tip:** `apt list --installed` shows all packages currently installed on your system.
 ---
 
 ## 🗃️ Archiving & Compression
