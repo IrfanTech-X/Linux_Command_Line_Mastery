@@ -10,7 +10,7 @@ The Linux command line is powerful — mastering it opens doors to automation, d
 This project helps students, developers, and enthusiasts strengthen their Linux skills through hands-on command examples.
 
 ---
-# 🧑‍💻 Change Username (Recommended - Simple)
+## 🧑‍💻 Change Username (Recommended - Simple)
 
 ### ⏱ Step-by-Step (Takes 2–3 Minutes)
 
