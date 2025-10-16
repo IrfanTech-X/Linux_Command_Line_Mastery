@@ -29,67 +29,6 @@ This project helps students, developers, and enthusiasts strengthen their Linux 
 
 ## 💡 Example Commands
 
-## 🧭 Navigation & File Management
-
-| Command | Description | Example |
-|----------|-------------|----------|
-| `pwd` | Displays the full path of your **current working directory**, helping you know your exact location in the system. | `pwd` |
-| `ls` | Lists all **files and directories** in the current folder. Add `-l` for detailed info or `-a` to show hidden files. | `ls -la` |
-| `cd` | Changes the **current directory**. Use `cd ..` to move up one level or `cd ~` to go back to your home folder. | `cd /home/user/Documents` |
-| `mkdir` | Creates a **new directory (folder)** at the specified path. | `mkdir projects` |
-| `rmdir` | Removes an **empty directory**. It won’t delete folders that contain files. | `rmdir old_folder` |
-| `cp` | **Copies** files or directories from one location to another. Use `-r` to copy folders recursively. | `cp file.txt /backup/` |
-| `mv` | **Moves or renames** files or directories. | `mv notes.txt Documents/` |
-| `rm` | **Deletes** files or directories. Use `-r` for recursive delete and `-f` to force deletion. | `rm -rf test_folder` |
-| `touch` | Creates a **new empty file** or updates a file’s modification timestamp. | `touch newfile.txt` |
-| `cat` | **Displays file contents** directly in the terminal. Great for reading small text files. | `cat notes.txt` |
-| `less` | Opens a file **page by page**, allowing you to scroll with arrows or spacebar. | `less logfile.log` |
-| `more` | Similar to `less`, but moves forward one screen at a time. | `more text.txt` |
-| `head` | Displays the **first 10 lines** of a file (default). Add `-n` to specify a custom number. | `head -n 5 file.txt` |
-| `tail` | Shows the **last 10 lines** of a file. Use `-f` to monitor logs in real time. | `tail -f syslog` |
-| `tree` | Displays all files and folders in a **tree-like structure**. | `tree /home/user` |
-| `find` | **Searches for files or directories** by name or pattern within a path. | `find /home -name "*.txt"` |
-| `locate` | Quickly **finds files** using a prebuilt system index. Run `updatedb` first if needed. | `locate config.json` |
-| `which` | Shows the **full path** of a command or executable. | `which python` |
-| `whereis` | Locates the **binary, source, and man page** files for a command. | `whereis ls` |
-| `echo` | Prints text or variable output to the terminal. | `echo "Hello Linux"` |
-| `cat > file` | Creates a **new file** and lets you type its content directly in the terminal. | `cat > note.txt` |
-| `cat file1 file2 > newfile` | Combines multiple files into one. | `cat a.txt b.txt > combined.txt` |
-| `grep` | Searches for **specific text patterns** inside files. | `grep "error" logfile.log` |
-| `sort` | **Sorts lines** in a file alphabetically or numerically. | `sort names.txt` |
-| `uniq` | Removes **duplicate lines** from a sorted file. | `uniq sorted.txt` |
-| `wc` | Counts the **lines, words, and characters** in a file. | `wc file.txt` |
-| `diff` | Compares two text files **line by line** and shows the differences. | `diff file1.txt file2.txt` |
-| `cmp` | Compares two files **byte by byte** to check for differences. | `cmp image1.jpg image2.jpg` |
-| `file` | Displays the **type of file**, such as text, binary, or executable. | `file script.sh` |
-| `basename` | Extracts the **filename** from a full path. | `basename /home/user/file.txt` |
-| `dirname` | Extracts the **directory path** from a file path. | `dirname /home/user/file.txt` |
-| `du` | Shows **disk usage** of files and directories. Use `-h` for human-readable sizes. | `du -sh *` |
-| `df` | Displays **disk space usage** of all mounted filesystems. | `df -h` |
-| `ln` | Creates **hard or symbolic links** between files. | `ln -s file.txt shortcut.txt` |
-| `history` | Displays a **list of recently used commands** in the current shell. | `history` |
-| `clear` | **Clears the terminal screen**, keeping it tidy. | `clear` |
-| `alias` | Creates a **shortcut command** for a long command sequence. | `alias ll='ls -la'` |
-| `unalias` | Removes a previously defined alias. | `unalias ll` |
-| `man` | Opens the **manual (help) page** for any Linux command. | `man ls` |
-| `whoami` | Displays the **current logged-in username**. | `whoami` |
-| `hostname` | Shows or sets the **system’s hostname**. | `hostname` |
-| `date` | Displays or sets the **current date and time**. | `date` |
-| `cal` | Displays a **calendar** for the current or specified month/year. | `cal 2025` |
-| `uptime` | Shows how long the **system has been running** and load averages. | `uptime` |
-| `lsblk` | Lists all **block storage devices** like hard drives or USBs. | `lsblk` |
-| `stat` | Displays detailed **file metadata** such as size, permissions, and timestamps. | `stat file.txt` |
-| `xargs` | Builds and executes commands using **input from another command**. | `find . -name "*.log" | xargs rm` |
-| `cut` | Extracts **specific fields or columns** from a line of text. | `cut -d ':' -f1 /etc/passwd` |
-| `paste` | **Merges lines** from multiple files side by side. | `paste file1 file2` |
-| `tee` | Writes output to **both a file and the screen simultaneously**. | `ls | tee list.txt` |
-
-💬 **Tip:** Use `ls -lh` to see file sizes in a human-readable format and `ls -lt` to sort by modification time.
-
-💬 **Tip:** To quickly check what’s inside your folder, use `ls -lh` — it shows file sizes in a human-readable format.
-
----
-
 ## ⚙️ System Information
 
 | Command | Description | Example |
