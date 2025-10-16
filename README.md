@@ -16,13 +16,15 @@ This project helps students, developers, and enthusiasts strengthen their Linux 
 
 Run these commands one by one in your **Terminal** (`Ctrl + Alt + T`):
 
-| Step | Command | What It Does |
-|------|----------|--------------|
-| 1 | `sudo usermod -l NEWNAME OLDNAME` | Changes username from **OLDNAME** to **NEWNAME** |
-| 2 | `sudo usermod -m -d /home/NEWNAME NEWNAME` | Moves the home folder to `/home/NEWNAME` |
-| 3 | `sudo groupmod -n NEWNAME OLDNAME` | Updates the group name to match the new username |
-| 4 | `sudo chown -R NEWNAME:NEWNAME /home/NEWNAME` | Changes the ownership of all files in the home directory to the new user |
-| 5 | `sudo reboot` | Reboots the system to apply all changes |
+### ⚙️ Step-by-Step Guide
+
+| Step | Description | Command |
+|------|--------------|----------|
+| **1** | **Login as Root 👑** | `sudo -i` |
+| **2** | **Change Username** | `sudo usermod -l NEW_USERNAME -d /home/NEW_USERNAME -m OLD_USERNAME` |
+| **3** | **(Optional) Change Group Name** | `sudo groupmod -n NEW_USERNAME OLD_USERNAME` |
+| **4** | **Fix Ownership** | `sudo chown -R NEW_USERNAME:NEW_USERNAME /home/NEW_USERNAME` |
+| **5** | **Reboots the system to apply all changes** | `sudo reboot` |
 
 💡 **Tip:**  
 Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desired new username**.
