@@ -437,6 +437,7 @@ This project helps students, developers, and enthusiasts strengthen their Linux 
 | `yum remove` | Removes a package on **RHEL/CentOS** systems. | `sudo yum remove wget` |
 | `dnf install` | Installs a package on **modern Fedora** systems. | `sudo dnf install vim` |
 | `dnf remove` | Removes a package on **Fedora** systems. | `sudo dnf remove vim` |
+| `dnf update` | Updates all packages on Fedora or newer RHEL systems. | `sudo dnf update` |
 | `snap install` | Installs a **Snap package**. | `sudo snap install vlc` |
 | `snap remove` | Removes a Snap package. | `sudo snap remove vlc` |
 | `flatpak install` | Installs a **Flatpak package**. | `flatpak install flathub org.gimp.GIMP` |
