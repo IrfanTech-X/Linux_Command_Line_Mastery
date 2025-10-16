@@ -310,6 +310,239 @@ This project helps students, developers, and enthusiasts strengthen their Linux 
 
 💬 **Tip:** Use `top`, `htop`, and `pidstat` together to track both system-wide and per-process resource usage.
 ---
+## 🌐 Networking Commands
+
+| Command | Description | Example |
+|----------|-------------|----------|
+| `ifconfig` | Displays or configures **network interfaces** (use `ip addr` in modern systems). | `ifconfig` |
+| `ip addr` | Shows **IP addresses and network interfaces** on your system. | `ip addr` |
+| `ping` | Sends **ICMP packets** to check connectivity to a host. | `ping google.com` |
+| `traceroute` | Shows the **path packets take** to reach a host. | `traceroute google.com` |
+| `netstat` | Displays **network connections, routing tables, and interface stats**. | `netstat -tuln` |
+| `ss` | Modern alternative to `netstat`, shows **socket statistics**. | `ss -tulw` |
+| `wget` | Downloads **files from the internet** via command line. | `wget https://example.com/file.txt` |
+| `curl` | Transfers data to/from a server. Can **fetch web pages** or send requests. | `curl https://example.com` |
+| `scp` | **Copies files securely** between hosts over SSH. | `scp file.txt user@remote:/home/user/` |
+| `rsync` | Efficiently **syncs files** between local and remote systems. | `rsync -av file.txt user@remote:/home/user/` |
+| `ftp` | Connects to a **remote FTP server** to transfer files. | `ftp ftp.example.com` |
+| `sftp` | Secure FTP over SSH for **encrypted file transfer**. | `sftp user@remote` |
+| `ssh` | Connects to a **remote server securely** using SSH. | `ssh user@server.com` |
+| `hostname` | Displays or sets the **system hostname**. | `hostname` |
+| `dig` | Performs **DNS lookups** and shows detailed DNS info. | `dig example.com` |
+| `nslookup` | Queries **DNS to resolve domain names** to IPs. | `nslookup google.com` |
+| `route` | Displays or manipulates the **IP routing table**. | `route -n` |
+| `arp` | Shows the **ARP cache** mapping IP addresses to MAC addresses. | `arp -a` |
+| `curl -I` | Fetches **HTTP headers** of a webpage. | `curl -I https://example.com` |
+| `tcpdump` | Captures and analyzes **network packets** in real time. | `sudo tcpdump -i eth0` |
+| `nmap` | Scans **network hosts and ports**. | `nmap 192.168.1.1` |
+| `ethtool` | Displays or configures **network interface parameters**. | `ethtool eth0` |
+| `ping6` | Sends **ICMP packets for IPv6 connectivity**. | `ping6 google.com` |
+| `iwconfig` | Shows or configures **wireless network interfaces**. | `iwconfig wlan0` |
+| `nmcli` | Command-line tool for **NetworkManager** to manage network connections. | `nmcli device status` |
+| `curl -O` | Downloads a **file from a URL** and saves it with the same name. | `curl -O https://example.com/file.txt` |
+| `wget -c` | **Continues an interrupted download** from where it left off. | `wget -c file.zip` |
+| `scp -r` | Recursively copies **directories over SSH**. | `scp -r folder user@host:/path` |
+| `rsync --delete` | Syncs directories and **removes extra files** from the destination. | `rsync -av --delete source/ dest/` |
+| `dig +short` | Quickly returns the **IP address** of a domain. | `dig +short example.com` |
+| `who` | Lists **users currently logged in**. | `who` |
+| `w` | Displays **logged-in users and their current activity**. | `w` |
+| `finger` | Shows detailed info about a **user**. | `finger username` |
+| `uptime` | Shows **system running time and load averages**. | `uptime` |
+| `netcat` | Reads and writes data over network connections; useful for **port testing**. | `nc -zv host 80` |
+| `hostnamectl` | Displays or **sets hostname and OS info**. | `hostnamectl status` |
+| `ip route` | Shows **routing table** for network traffic. | `ip route` |
+| `systemctl status network` | Shows the **network service status** on systemd-based systems. | `systemctl status NetworkManager` |
+| `ping -c 5` | Sends a limited number of **ping requests**. | `ping -c 5 example.com` |
+| `ss -tulpn` | Shows **listening sockets** with process info. | `ss -tulpn` |
+| `traceroute -6` | Traces **IPv6 route** to a destination. | `traceroute -6 example.com` |
+| `iptables -L` | Lists **firewall rules** in iptables. | `sudo iptables -L` |
+| `ufw status` | Displays the **status of UFW firewall**. | `sudo ufw status` |
+| `iptables -A INPUT -p tcp --dport 22 -j ACCEPT` | Adds a **firewall rule** to allow SSH traffic. | `sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT` |
+| `ping -i 0.5` | Sends **ping packets at 0.5s interval**. | `ping -i 0.5 google.com` |
+| `curl -L` | Follows **HTTP redirects** while fetching a URL. | `curl -L https://example.com` |
+| `wget -q` | Downloads a file **quietly** without showing progress. | `wget -q file.zip` |
+| `scp -P` | Uses a **custom port** for SSH file transfer. | `scp -P 2222 file.txt user@host:/path` |
+| `rsync -z` | Enables **compression during sync** to save bandwidth. | `rsync -avz source/ dest/` |
+| `netstat -anp` | Shows all **connections and listening ports** with process info. | `netstat -anp` |
+| `curl -I -L` | Fetches **headers and follows redirects**. | `curl -I -L https://example.com` |
+| `ping -s 64` | Sends a **custom-size ping packet**. | `ping -s 64 google.com` |
+| `dig MX` | Shows **mail exchange (MX) records** of a domain. | `dig MX example.com` |
+| `nslookup -type=MX` | Alternative way to get **MX records**. | `nslookup -type=MX example.com` |
+| `traceroute -n` | Shows **IP addresses only** in the route. | `traceroute -n example.com` |
+| `arp -a` | Lists **all cached ARP entries**. | `arp -a` |
+| `ip link set eth0 up` | Brings a **network interface up**. | `ip link set eth0 up` |
+| `ip link set eth0 down` | Brings a **network interface down**. | `ip link set eth0 down` |
+
+💬 **Tip:** For network troubleshooting, combine `ping`, `traceroute`, and `nslookup` for faster diagnosis.
+
+---
+
+## 🔒 File Permissions & Ownership
+
+| Command | Description | Example |
+|----------|-------------|----------|
+| `chmod` | Changes **file or directory permissions** (read, write, execute). | `chmod 755 script.sh` |
+| `chown` | Changes **owner and group** of a file or directory. | `chown user:group file.txt` |
+| `chgrp` | Changes **group ownership** of a file or directory. | `chgrp staff file.txt` |
+| `umask` | Shows or sets the **default file creation permissions**. | `umask 022` |
+| `ls -l` | Displays **detailed file info** including permissions, owner, and group. | `ls -l` |
+| `stat` | Displays detailed **file metadata**, including permissions and timestamps. | `stat file.txt` |
+| `getfacl` | Displays **access control list (ACL)** for a file. | `getfacl file.txt` |
+| `setfacl` | Sets **ACL permissions** for a file. | `setfacl -m u:user:rwx file.txt` |
+| `umask 077` | Restricts **default permissions** for new files to owner only. | `umask 077` |
+| `chmod -R 700` | Recursively sets **permissions** for all files in a directory. | `chmod -R 700 project/` |
+| `chown -R user:group` | Changes **owner/group recursively** for a folder. | `chown -R user:staff project/` |
+| `touch file.txt` | Creates a file with **default permissions** based on umask. | `touch file.txt` |
+| `ls -la` | Shows **all files including hidden ones** with detailed info. | `ls -la` |
+| `whoami` | Shows the **current user**, helpful when managing permissions. | `whoami` |
+| `groups` | Shows **groups** the current user belongs to. | `groups` |
+| `id` | Displays **user ID, group ID, and group memberships**. | `id` |
+| `sudo` | Executes a command **with administrative privileges**. | `sudo apt update` |
+| `su` | Switches to another user (root by default). | `su -` |
+| `sudo -i` | Opens a **root shell**. | `sudo -i` |
+| `chmod u+x file.sh` | Gives **execute permission** to the file owner. | `chmod u+x script.sh` |
+| `chmod g-w file.txt` | Removes **write permission** for the group. | `chmod g-w file.txt` |
+| `chmod o-r file.txt` | Removes **read permission** for others. | `chmod o-r file.txt` |
+| `lsattr` | Shows **file attributes**, e.g., immutable flag. | `lsattr file.txt` |
+| `chattr +i` | Makes a file **immutable** (cannot be deleted/modified). | `chattr +i important.txt` |
+| `chattr -i` | Removes **immutable attribute**. | `chattr -i important.txt` |
+| `stat -c "%a %n"` | Shows **numeric permissions** of a file. | `stat -c "%a %n" file.txt` |
+| `find . -perm 644` | Finds files with **specific permissions**. | `find . -perm 644` |
+| `chmod 777` | Grants **full read, write, execute permissions** to everyone (use carefully). | `chmod 777 file.txt` |
+| `umask 002` | Sets **default permissions** for new files to be group-writable. | `umask 002` |
+| `getent passwd` | Displays **all users** on the system. | `getent passwd` |
+| `getent group` | Displays **all groups** on the system. | `getent group` |
+| `chown root:root file.txt` | Assigns **root as owner** of a file. | `chown root:root file.txt` |
+| `chmod 644 file.txt` | Common **permission setting** for text files. | `chmod 644 file.txt` |
+| `chmod 600 file.txt` | Restricts **permissions to owner only**. | `chmod 600 file.txt` |
+| `chmod 400 file.txt` | Makes a file **read-only** for owner. | `chmod 400 file.txt` |
+
+💬 **Tip:** Use `ls -l` and `stat` to verify permission changes immediately.
+
+---
+## 📦 Package Management
+
+| Command | Description | Example |
+|----------|-------------|----------|
+| `apt update` | Updates the **package index** for Debian-based systems. | `sudo apt update` |
+| `apt upgrade` | Upgrades **all installed packages** to the latest versions. | `sudo apt upgrade` |
+| `apt install` | Installs a **package** on the system. | `sudo apt install git` |
+| `apt remove` | Removes an installed **package**. | `sudo apt remove nano` |
+| `apt purge` | Removes a package **along with its configuration files**. | `sudo apt purge nano` |
+| `apt search` | Searches the **package repository** for a package. | `apt search python3` |
+| `apt show` | Displays **detailed information** about a package. | `apt show git` |
+| `dpkg -i` | Installs a **.deb package** manually. | `sudo dpkg -i package.deb` |
+| `dpkg -r` | Removes a **package** installed via dpkg. | `sudo dpkg -r package` |
+| `yum install` | Installs a package on **RHEL/CentOS** systems. | `sudo yum install wget` |
+| `yum remove` | Removes a package on **RHEL/CentOS** systems. | `sudo yum remove wget` |
+| `dnf install` | Installs a package on **modern Fedora** systems. | `sudo dnf install vim` |
+| `dnf remove` | Removes a package on **Fedora** systems. | `sudo dnf remove vim` |
+| `snap install` | Installs a **Snap package**. | `sudo snap install vlc` |
+| `snap remove` | Removes a Snap package. | `sudo snap remove vlc` |
+| `flatpak install` | Installs a **Flatpak package**. | `flatpak install flathub org.gimp.GIMP` |
+| `flatpak remove` | Removes a Flatpak package. | `flatpak remove org.gimp.GIMP` |
+| `apt autoremove` | Removes **unused dependencies** automatically. | `sudo apt autoremove` |
+| `apt list --installed` | Lists all **installed packages** on the system. | `apt list --installed` |
+| `rpm -qa` | Lists all **installed RPM packages**. | `rpm -qa` |
+
+---
+
+## 🗃️ Archiving & Compression
+
+| Command | Description | Example |
+|----------|-------------|----------|
+| `tar -cvf` | Creates a **tar archive** of files/folders. | `tar -cvf archive.tar folder/` |
+| `tar -xvf` | Extracts a **tar archive**. | `tar -xvf archive.tar` |
+| `tar -czvf` | Creates a **compressed tar.gz archive**. | `tar -czvf archive.tar.gz folder/` |
+| `tar -xzvf` | Extracts a **tar.gz archive**. | `tar -xzvf archive.tar.gz` |
+| `zip` | Creates a **zip archive**. | `zip archive.zip file1 file2` |
+| `unzip` | Extracts a **zip archive**. | `unzip archive.zip` |
+| `gzip` | Compresses a **single file**. | `gzip file.txt` |
+| `gunzip` | Decompresses a **.gz file**. | `gunzip file.txt.gz` |
+| `bzip2` | Compresses a file using **bzip2 algorithm**. | `bzip2 file.txt` |
+| `bunzip2` | Decompresses a **.bz2 file**. | `bunzip2 file.txt.bz2` |
+| `xz` | Compresses files using **xz compression**. | `xz file.txt` |
+| `unxz` | Decompresses a **.xz file**. | `unxz file.txt.xz` |
+| `tar -cJvf` | Creates a **tar.xz archive**. | `tar -cJvf archive.tar.xz folder/` |
+| `tar -xJvf` | Extracts a **tar.xz archive**. | `tar -xJvf archive.tar.xz` |
+| `7z a` | Creates a **7z archive**. | `7z a archive.7z folder/` |
+| `7z x` | Extracts a **7z archive**. | `7z x archive.7z` |
+| `split -b 10M` | Splits a file into **10MB chunks**. | `split -b 10M bigfile.tar` |
+| `cat file* > mergedfile` | Merges **split files** back together. | `cat x* > bigfile.tar` |
+| `tar --delete` | Deletes a file from a **tar archive**. | `tar --delete -f archive.tar file.txt` |
+| `tar -tvf` | Lists **contents of a tar archive**. | `tar -tvf archive.tar` |
+
+---
+
+## 💾 Disk Management
+
+| Command | Description | Example |
+|----------|-------------|----------|
+| `df -h` | Shows **disk usage** of all mounted filesystems. | `df -h` |
+| `du -sh` | Shows **size of files/folders** in human-readable format. | `du -sh folder/` |
+| `lsblk` | Lists all **block devices** like HDDs and USB drives. | `lsblk` |
+| `fdisk -l` | Displays **disk partitions and info** (requires root). | `sudo fdisk -l` |
+| `parted -l` | Shows **disk partition layout**. | `sudo parted -l` |
+| `mount` | Mounts a **filesystem** to a directory. | `sudo mount /dev/sdb1 /mnt` |
+| `umount` | Unmounts a **mounted filesystem**. | `sudo umount /mnt` |
+| `blkid` | Shows **UUIDs and filesystem types** of partitions. | `blkid` |
+| `mkfs.ext4` | Formats a partition as **ext4 filesystem**. | `sudo mkfs.ext4 /dev/sdb1` |
+| `fsck` | Checks and **repairs filesystem errors**. | `sudo fsck /dev/sdb1` |
+| `df -i` | Displays **inode usage** on mounted filesystems. | `df -i` |
+| `ls -l /dev/disk/by-uuid/` | Lists **disk UUIDs**. | `ls -l /dev/disk/by-uuid/` |
+| `tune2fs -l` | Displays **ext filesystem info**. | `sudo tune2fs -l /dev/sdb1` |
+| `resize2fs` | Resizes an **ext2/3/4 filesystem**. | `sudo resize2fs /dev/sdb1` |
+| `mount -o remount,rw` | Remounts a **filesystem as read-write**. | `sudo mount -o remount,rw /` |
+| `df -Th` | Shows **filesystem type** and disk usage. | `df -Th` |
+| `ls -lh /mnt` | Displays **sizes of files** in human-readable format. | `ls -lh /mnt` |
+| `stat /dev/sda1` | Shows **metadata about a disk partition**. | `stat /dev/sda1` |
+| `wipefs` | Removes **filesystem signatures** from a device. | `sudo wipefs /dev/sdb1` |
+| `hdparm -I` | Shows **hardware parameters** of a drive. | `sudo hdparm -I /dev/sda` |
+| `df -hT` | Displays **disk usage with filesystem types**. | `df -hT` |
+
+---
+
+## 🖥️ System Monitoring & Logs
+
+| Command | Description | Example |
+|----------|-------------|----------|
+| `dmesg` | Shows **kernel and boot messages**. | `dmesg | less` |
+| `journalctl` | Displays **system logs** on systemd systems. | `journalctl -xe` |
+| `tail -f /var/log/syslog` | Continuously monitors a **log file**. | `tail -f /var/log/syslog` |
+| `uptime` | Shows how long the system has been running and load averages. | `uptime` |
+| `free -h` | Displays **RAM and swap usage** in human-readable format. | `free -h` |
+| `vmstat 2` | Shows **virtual memory and CPU statistics** every 2 seconds. | `vmstat 2` |
+| `iostat` | Displays **CPU and disk I/O stats**. | `iostat` |
+| `sar -u 1 5` | Monitors **CPU usage** 1 second intervals, 5 times. | `sar -u 1 5` |
+| `iotop` | Monitors **disk I/O by process** (requires root). | `sudo iotop` |
+| `watch` | Runs a command **periodically** and shows live output. | `watch -n 2 df -h` |
+| `ps aux` | Shows all **running processes** with details. | `ps aux` |
+| `top` | Displays **real-time process info**. | `top` |
+| `htop` | Interactive process monitor with **CPU/memory bars**. | `htop` |
+| `sar -r 1 5` | Monitors **memory usage** 1 second intervals, 5 times. | `sar -r 1 5` |
+| `uptime -p` | Shows **uptime in human-readable format**. | `uptime -p` |
+| `journalctl -f` | **Live view** of system logs. | `journalctl -f` |
+| `tail -n 50 /var/log/syslog` | Shows **last 50 lines** of syslog. | `tail -n 50 /var/log/syslog` |
+| `free -m` | Displays **memory in MB**. | `free -m` |
+| `vmstat -s` | Shows **memory statistics summary**. | `vmstat -s` |
+| `uptime -s` | Shows **exact system boot time**. | `uptime -s` |
+| `sar -b 1 5` | Monitors **I/O statistics** every 1 second, 5 times. | `sar -b 1 5` |
+| `iostat -xz 2` | Detailed CPU and **disk I/O stats every 2 seconds**. | `iostat -xz 2` |
+| `pidof` | Shows **PID of a running process**. | `pidof nginx` |
+| `kill` | Sends a signal to **terminate a process**. | `kill 1234` |
+| `kill -9` | Forces **immediate termination** of a process. | `kill -9 1234` |
+| `pkill` | Kills a process by **name**. | `pkill firefox` |
+| `jobs` | Lists **background jobs** in the current shell. | `jobs` |
+| `fg` | Brings a **background job to foreground**. | `fg %1` |
+| `bg` | Resumes a **job in the background**. | `bg %1` |
+| `nice` | Sets **priority of a process**. | `nice -n 10 ./script.sh` |
+| `renice` | Changes **priority of running process**. | `renice 5 -p 1234` |
+
+---
+
+💬 **Tip:** Use `htop` for a **friendly real-time overview** of CPU, memory, and processes. Combine `journalctl` and `tail -f` for **log monitoring**.
+
+---
 
 ## 🧠 How to Use
 
