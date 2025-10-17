@@ -93,7 +93,7 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 | `rmdir` | Removes an **empty directory**. It won’t delete folders that contain files. | `rmdir old_folder` |
 | `cp` | **Copies** files or directories from one location to another. Use `-r` to copy folders recursively. | `cp file.txt /backup/` |
 | `mv` | **Moves or renames** files or directories. | `mv notes.txt Documents/` |
-| `rm` | **Deletes** files or directories. Use `-r` for recursive delete and `-f` to force deletion. | `rm -rf test_folder` |
+| `rm` | **Deletes** files or directories. Use `-r` for recursive delete and `-f` to force deletion. |`rm -rf test_folder` `rm file.txt` |
 | `touch` | Creates a **new empty file** or updates a file’s modification timestamp. | `touch newfile.txt` |
 | `cat` | **Displays file contents** directly in the terminal. Great for reading small text files. | `cat notes.txt` |
 | `less` | Opens a file **page by page**, allowing you to scroll with arrows or spacebar. | `less logfile.log` |
