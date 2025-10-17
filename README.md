@@ -196,7 +196,7 @@ nano notes.txt
 | `lspci` | Lists **PCI devices** such as network and sound cards. | `lspci` |
 | `lsmod` | Displays **loaded kernel modules**. | `lsmod` |
 | `hostnamectl` | Shows or changes the **system hostname and related info**. | `hostnamectl` |
-| `uptime` | Shows **system uptime** and average load. | `uptime` |
+| `uptime` | Shows **system uptime**/Tells you **how long your system has been running** and the average CPU load. | `uptime` |
 | `top` | Displays a **live view of running processes** and CPU/memory usage. | `top` |
 | `htop` | An **interactive colorful version** of `top`. | `htop` |
 | `free -h` | Displays **RAM and swap usage** in human-readable format. | `free -h` |
