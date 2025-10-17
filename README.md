@@ -197,14 +197,15 @@ nano notes.txt
 | `lsmod` | Displays **loaded kernel modules**. | `lsmod` |
 | `hostnamectl` | Shows or changes the **system hostname and related info**. | `hostnamectl` |
 | `uptime` | Shows **system uptime**/Tells you **how long your system has been running** and the average CPU load. | `uptime` |
-| `top` | Displays a **live view of running processes** and CPU/memory usage. | `top` |
-| `htop` | An **interactive colorful version** of `top`. | `htop` |
+| `top` | Displays a **live view of all running processes**, their resource usage(CPU/memory usage), and system load. | `top` |
+| `htop` | An improved, **interactive colorful version** of `top` with interactive process control. | `htop` |
+| `free -m` | Displays **memory usage** (RAM and swap) in megabytes. | `free -m` |
 | `free -h` | Displays **RAM and swap usage** in human-readable format. | `free -h` |
 | `vmstat` | Reports **virtual memory statistics**. | `vmstat 2 5` |
 | `iostat` | Displays **CPU and device I/O statistics**. | `iostat` |
 | `df -h` | Shows **disk space usage** of filesystems. | `df -h` |
 | `du -sh` | Displays **total size** of a directory. | `du -sh /home/user` |
-| `who` | Lists **logged-in users**. | `who` |
+| `who` | Lists all **currently logged-in users**. | `who` |
 | `w` | Shows **who is logged in** and what they’re doing. | `w` |
 | `last` | Displays **login history**. | `last` |
 | `id` | Prints **user and group IDs**. | `id` |
@@ -220,11 +221,13 @@ nano notes.txt
 | `uname -r` | Shows the **kernel release version**. | `uname -r` |
 | `uptime -p` | Prints uptime in **pretty format** (e.g., “up 2 hours, 5 minutes”). | `uptime -p` |
 | `whoami` | Displays **current username**. | `whoami` |
-| `hostname` | Prints **system hostname**. | `hostname` |
+| `hostname` | Prints **system hostname**(the name your machine is identified by on a network). | `hostname` |
 | `arch` | Displays **machine architecture** (e.g., x86_64). | `arch` |
 | `dmidecode` | Displays **hardware information** from the system BIOS. | `sudo dmidecode -t system` |
 | `inxi` | Displays **comprehensive hardware info** in readable format. | `inxi -Fxz` |
 | `uptime -s` | Shows the **exact system boot time**. | `uptime -s` |
+| `date` | Prints the **current date and time**. | `date` |
+| `cal` | Displays a **monthly calendar** right in the terminal. | `cal` |
 | `neofetch` | Shows a **summary of OS and hardware info** with a nice logo. | `neofetch` |
 
 💬 **Tip:** Use `watch -n 1 free -m` to continuously monitor memory usage every second.
