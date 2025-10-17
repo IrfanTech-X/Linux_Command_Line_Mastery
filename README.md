@@ -140,6 +140,27 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 💬 **Tip:** To quickly check what’s inside your folder, use `ls -lh` to see file sizes in a human-readable format and `ls -lt` to sort by modification time.
 
 ---
+## 📂 Directory Navigation with `cd`
+
+| Command | Description | Example |
+|----------|-------------|----------|
+| `cd` | Changes the **current directory**. If used alone, it takes you to your **home directory**. | `cd` |
+| `cd ~` | Quickly jumps to your **home directory** (same as just typing `cd`). | `cd ~` |
+| `cd ..` | Moves **one level up** from the current directory (to the parent folder). | `cd ..` |
+| `cd /` | Takes you to the **root directory** of the Linux filesystem. | `cd /` |
+| `cd -` | Switches back to the **previous directory** you were in. | `cd -` |
+| `cd /path/to/folder` | Moves directly to the specified directory path. | `cd /home/user/Documents` |
+| `cd ../..` | Moves **two levels up** in the directory structure. | `cd ../..` |
+| `cd ~/Downloads` | Moves to the **Downloads folder** inside your home directory. | `cd ~/Downloads` |
+| `cd "$(dirname FILE)"` | Changes to the **directory containing a specific file**. | `cd "$(dirname script.sh)"` |
+
+💡 **Tips:**  
+- Use `pwd` after `cd` to confirm your current directory.  
+- Combine `cd` with `ls` to explore directories efficiently:  
+  ```bash
+  cd /etc && ls
+
+---
 ## ✏️ Editing Files with Nano
 
 | Command | Description | Example |
