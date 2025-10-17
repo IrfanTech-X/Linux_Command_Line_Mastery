@@ -49,25 +49,6 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 
 ## 💡 Example Commands
 
-## ⚙️ System Information
-
-| Command | Description | Example |
-|----------|-------------|----------|
-| `uname -a` | Shows **detailed system and kernel information**, including OS name, version, and architecture. | `uname -a` |
-| `hostname` | Displays the **system’s hostname** (the name your machine is identified by on a network). | `hostname` |
-| `uptime` | Tells you **how long your system has been running** and the average CPU load. | `uptime` |
-| `top` | Displays a **live view of all running processes**, their resource usage, and system load. | `top` |
-| `htop` | An improved, colorful version of `top` with interactive process control. | `htop` |
-| `df -h` | Shows **disk space usage** for all mounted filesystems in human-readable format. | `df -h` |
-| `free -m` | Displays **memory usage** (RAM and swap) in megabytes. | `free -m` |
-| `who` | Lists all **currently logged-in users**. | `who` |
-| `date` | Prints the **current date and time**. | `date` |
-| `cal` | Displays a **monthly calendar** right in the terminal. | `cal` |
-
-💬 **Tip:** Use `watch -n 1 free -m` to continuously monitor memory usage in real time.
-
----
-
 ## 🔐 User Management
 
 | Command | Description | Example |
@@ -221,7 +202,7 @@ nano notes.txt
 | `uname -r` | Shows the **kernel release version**. | `uname -r` |
 | `uptime -p` | Prints uptime in **pretty format** (e.g., “up 2 hours, 5 minutes”). | `uptime -p` |
 | `whoami` | Displays **current username**. | `whoami` |
-| `hostname` | Prints **system hostname**(the name your machine is identified by on a network). | `hostname` |
+| `hostname` | Prints **system hostname** (the name your machine is identified by on a network). | `hostname` |
 | `arch` | Displays **machine architecture** (e.g., x86_64). | `arch` |
 | `dmidecode` | Displays **hardware information** from the system BIOS. | `sudo dmidecode -t system` |
 | `inxi` | Displays **comprehensive hardware info** in readable format. | `inxi -Fxz` |
