@@ -260,6 +260,7 @@ nano notes.txt
 | `ps -eo pid,ppid,cmd,%mem,%cpu` | Displays extended **process info with CPU and memory usage**. | `ps -eo pid,cmd,%mem,%cpu` |
 
 💬 **Tip:** Use `top`, `htop`, and `pidstat` together to track both system-wide and per-process resource usage.
+
 ---
 ## 🌐 Networking Commands
 
