@@ -171,7 +171,7 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 
 | Shortcut | Action |
 |-----------|---------|
-| `Ctrl + O` | Save changes (Write Out) |
+| `Ctrl + O` then `Enter` | Save changes (Write Out) |
 | `Ctrl + X` | Exit Nano |
 | `Ctrl + G` | Show help |
 | `Ctrl + K` | Cut a line |
