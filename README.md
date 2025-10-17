@@ -106,7 +106,8 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 | `which` | Shows the **full path** of a command or executable. | `which python` |
 | `whereis` | Locates the **binary, source, and man page** files for a command. | `whereis ls` |
 | `echo` | Prints text or variable output to the terminal. | `echo "Hello Linux"` |
-| `cat > file` | Creates a **new file** and lets you type its content directly in the terminal. | `cat > note.txt` |
+| `cat > file` | Creates a **new file** and lets you type its content directly in the terminal. Press `Ctrl + D` to save and exit. | `cat > note.txt` |
+| `cat >> file` | **Appends** new content to an existing file without deleting previous data. Press `Ctrl + D` to save and exit. | `cat >> note.txt` |
 | `cat file1 file2 > newfile` | Combines multiple files into one. | `cat a.txt b.txt > combined.txt` |
 | `grep` | Searches for **specific text patterns** inside files. | `grep "error" logfile.log` |
 | `sort` | **Sorts lines** in a file alphabetically or numerically. | `sort names.txt` |
