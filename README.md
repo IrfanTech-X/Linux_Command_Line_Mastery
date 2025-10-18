@@ -520,6 +520,27 @@ nano notes.txt
 | `df -hT` | Displays **disk usage with filesystem types**. | `df -hT` |
 
 ---
+## 💾 Disk Usage with `du`
+
+| Command | Description | Example |
+|---------|-------------|---------|
+| `du` | Displays the **disk usage** of files and directories (in blocks by default). | `du /home/user` |
+| `du -h` | Shows disk usage in a **human-readable format** (KB, MB, GB). | `du -h /home/user/Documents` |
+| `du -s` | Displays only the **total size** of the specified directory. | `du -s /home/user/Documents` |
+| `du -sh` | Combines both options to show a **summarized, human-readable total size**. | `du -sh /home/user/Documents` |
+| `du -sh *` | Shows a **human-readable summary for each item** in the current directory (useful to see sizes of files/folders at once). | `du -sh *` |
+| `du -a` | Shows the **size of all files and directories**, not just folders. | `du -a /home/user/Documents` |
+| `du -h --max-depth=1` | Shows the size of directories **one level deep** (useful for folder overviews). | `du -h --max-depth=1 /home/user` |
+| `du -c` | Displays the **total disk usage** of all listed files and directories. | `du -ch /home/user/*` |
+| `du -k` | Displays sizes in **kilobytes (KB)**. | `du -k /home/user/Documents` |
+| `du -m` | Displays sizes in **megabytes (MB)**. | `du -m /home/user/Documents` |
+| `du -h \| sort -hr \| head -n 10` | Lists the **top 10 largest directories**. | `du -h /home/user | sort -hr | head -n 10` |
+
+💡 **Tip:** `du -sh *` is great for a quick glance at what's taking space in the current folder — pair it with `sort -hr` to list largest-first:
+```bash
+du -sh * | sort -hr
+
+---
 
 ## 🖥️ System Monitoring & Logs
 
