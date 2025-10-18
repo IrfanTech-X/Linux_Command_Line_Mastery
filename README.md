@@ -538,8 +538,8 @@ nano notes.txt
 
 💡 **Tip:** `du -sh *` is great for a quick glance at what's taking space in the current folder — pair it with `sort -hr` to list largest-first:
 ```bash
-du -sh * | sort -hr
-
+   du -sh * | sort -hr
+```
 ---
 
 ## 🖥️ System Monitoring & Logs
