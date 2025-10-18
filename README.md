@@ -112,7 +112,13 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 | `cat file1 file2 > newfile` | Combines multiple files into one. | `cat a.txt b.txt > combined.txt` |
 | `grep` | Searches for **specific text patterns** inside files. | `grep "error" logfile.log` |
 | `sort` | **Sorts lines** in a file alphabetically or numerically. | `sort names.txt` |
-| `uniq` | Removes **duplicate lines** from a sorted file. | `uniq sorted.txt` |
+| `sort -u` | **Sorts lines and removes duplicates** in one step. | `sort -u file.txt` |
+| `uniq` | Removes consecutive **duplicate lines** from a sorted file. | `uniq sorted.txt` |
+| `sort file.txt \| uniq` | **Sorts the file** and then removes all duplicates. | `sort names.txt \| uniq` |
+| `sort file.txt \| uniq -c` | **Counts occurrences** of each line after sorting. | `sort names.txt \| uniq -c` |
+| `sort file.txt \| uniq -d` | Shows only **duplicate lines** after sorting. | `sort names.txt \| uniq -d` |
+| `sort file.txt \| uniq -u` | Shows only **unique (non-repeated) lines** after sorting. | `sort names.txt \| uniq -u` |
+| `sort -f file.txt \| uniq -i` | Ignores **case differences** when sorting and removing duplicates. | `sort -f names.txt \| uniq -i` |
 | `wc` | Counts the **lines, words, and characters** in a file. | `wc file.txt` |
 | `diff` | Compares two text files **line by line** and shows the differences. | `diff file1.txt file2.txt` |
 | `cmp` | Compares two files **byte by byte** to check for differences. | `cmp image1.jpg image2.jpg` |
