@@ -112,20 +112,8 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 | `cat file1 file2 > newfile` | Combines multiple files into one. | `cat a.txt b.txt > combined.txt` |
 | `grep` | Searches for **specific text patterns** inside files. | `grep "error" logfile.log` |
 | `sort` | **Sorts lines** in a file alphabetically or numerically. | `sort names.txt` |
-| `sort -u` | **Sorts lines and removes duplicates** in one step. | `sort -u file.txt` |
 | `uniq` | Removes consecutive **duplicate lines** from a sorted file. | `uniq sorted.txt` |
-| `sort file.txt \| uniq` | **Sorts the file** and then removes all duplicates. | `sort names.txt \| uniq` |
-| `sort file.txt \| uniq -c` | **Counts occurrences** of each line after sorting. | `sort names.txt \| uniq -c` |
-| `sort file.txt \| uniq -d` | Shows only **duplicate lines** after sorting. | `sort names.txt \| uniq -d` |
-| `sort file.txt \| uniq -u` | Shows only **unique (non-repeated) lines** after sorting. | `sort names.txt \| uniq -u` |
-| `sort -f file.txt \| uniq -i` | Ignores **case differences** when sorting and removing duplicates. | `sort -f names.txt \| uniq -i` |
 | `wc` | Displays **number of lines, words, and bytes/characters** in a file. | `wc file.txt` |
-| `wc -l` | Shows only the **number of lines** in a file. | `wc -l file.txt` |
-| `wc -w` | Shows only the **number of words** in a file. | `wc -w file.txt` |
-| `wc -c` | Shows only the **number of bytes** in a file. | `wc -c file.txt` |
-| `wc -m` | Shows only the **number of characters** in a file. | `wc -m file.txt` |
-| `wc -L` | Shows the **length of the longest line** in a file. | `wc -L file.txt` |
-| `wc file1.txt file2.txt` | Shows counts for **multiple files** and a total. | `wc file1.txt file2.txt` |
 | `diff` | Compares two text files **line by line** and shows the differences. | `diff file1.txt file2.txt` |
 | `cmp` | Compares two files **byte by byte** to check for differences. | `cmp image1.jpg image2.jpg` |
 | `file` | Displays the **type of file**, such as text, binary, or executable. | `file script.sh` |
@@ -152,6 +140,47 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 | `tee` | Writes output to **both a file and the screen simultaneously**. | `ls | tee list.txt` |
 
 💬 **Tip:** To quickly check what’s inside your folder, use `ls -lh` to see file sizes in a human-readable format and `ls -lt` to sort by modification time.
+
+---
+## 📂 Sorting and Removing Duplicates with `sort` & `uniq`
+
+| Command | Description | Example |
+|---------|-------------|---------|
+| `sort` | **Sorts lines** in a file alphabetically or numerically. | `sort names.txt` |
+| `sort -u` | **Sorts lines and removes duplicates** in one step. | `sort -u file.txt` |
+| `uniq` | Removes consecutive **duplicate lines** from a sorted file. | `uniq sorted.txt` |
+| `sort file.txt \| uniq` | **Sorts the file** and then removes all duplicates. | `sort names.txt \| uniq` |
+| `sort file.txt \| uniq -c` | **Counts occurrences** of each line after sorting. | `sort names.txt \| uniq -c` |
+| `sort file.txt \| uniq -d` | Shows only **duplicate lines** after sorting. | `sort names.txt \| uniq -d` |
+| `sort file.txt \| uniq -u` | Shows only **unique (non-repeated) lines** after sorting. | `sort names.txt \| uniq -u` |
+| `sort -f file.txt \| uniq -i` | Ignores **case differences** when sorting and removing duplicates. | `sort -f names.txt \| uniq -i` |
+
+💡 **Tips:**  
+- Always use `sort` before `uniq` if duplicates are **not consecutive**.  
+- Combine with `grep` to filter specific patterns before removing duplicates:  
+  ```bash
+  grep "error" log.txt | sort | uniq -c
+
+---
+## 📊 File Count Analysis with `wc`
+
+| Command | Description | Example |
+|---------|-------------|---------|
+| `wc` | Displays **number of lines, words, and bytes** in a file. | `wc file.txt` |
+| `wc -l` | Shows only the **number of lines** in a file. | `wc -l file.txt` |
+| `wc -w` | Shows only the **number of words** in a file. | `wc -w file.txt` |
+| `wc -c` | Shows only the **number of bytes** in a file. | `wc -c file.txt` |
+| `wc -m` | Shows only the **number of characters** in a file (useful for multibyte text). | `wc -m file.txt` |
+| `wc -L` | Displays the **length of the longest line** in a file. | `wc -L file.txt` |
+| `wc file1.txt file2.txt` | Shows counts for **multiple files** and a total at the bottom. | `wc file1.txt file2.txt` |
+| `cat file.txt \| wc -l` | Counts the **number of lines** in a file using a pipe. | `cat file.txt | wc -l` |
+| `cat file.txt \| wc -w` | Counts the **number of words** in a file using a pipe. | `cat file.txt | wc -w` |
+
+💡 **Tips:**  
+- Use `wc -m` instead of `-c` if your file contains **Unicode or multibyte characters**, to get an accurate character count.  
+- Combine with `sort` or `grep` to count specific lines or patterns:  
+  ```bash
+  grep "error" log.txt | wc -l
 
 ---
 ## 📂 Directory Navigation with `cd`
