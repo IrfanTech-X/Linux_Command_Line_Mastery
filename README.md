@@ -119,7 +119,13 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 | `sort file.txt \| uniq -d` | Shows only **duplicate lines** after sorting. | `sort names.txt \| uniq -d` |
 | `sort file.txt \| uniq -u` | Shows only **unique (non-repeated) lines** after sorting. | `sort names.txt \| uniq -u` |
 | `sort -f file.txt \| uniq -i` | Ignores **case differences** when sorting and removing duplicates. | `sort -f names.txt \| uniq -i` |
-| `wc` | Counts the **lines, words, and characters** in a file. | `wc file.txt` |
+| `wc` | Displays **number of lines, words, and bytes/characters** in a file. | `wc file.txt` |
+| `wc -l` | Shows only the **number of lines** in a file. | `wc -l file.txt` |
+| `wc -w` | Shows only the **number of words** in a file. | `wc -w file.txt` |
+| `wc -c` | Shows only the **number of bytes** in a file. | `wc -c file.txt` |
+| `wc -m` | Shows only the **number of characters** in a file. | `wc -m file.txt` |
+| `wc -L` | Shows the **length of the longest line** in a file. | `wc -L file.txt` |
+| `wc file1.txt file2.txt` | Shows counts for **multiple files** and a total. | `wc file1.txt file2.txt` |
 | `diff` | Compares two text files **line by line** and shows the differences. | `diff file1.txt file2.txt` |
 | `cmp` | Compares two files **byte by byte** to check for differences. | `cmp image1.jpg image2.jpg` |
 | `file` | Displays the **type of file**, such as text, binary, or executable. | `file script.sh` |
