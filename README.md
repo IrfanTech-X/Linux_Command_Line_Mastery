@@ -442,6 +442,7 @@ nano notes.txt
 |----------|-------------|----------|
 | `apt update` | Updates the **package list/package** on Debian/Ubuntu systems — always run this before installing packages. | `sudo apt update` |
 | `apt upgrade` | Upgrades **all installed packages** to the latest versions. | `sudo apt upgrade` |
+| `sudo apt install bsdmainutils` | Installs the **`bsdmainutils` package** on Debian/Ubuntu-based systems. This package includes useful utilities like `cal`, `factor`, `column`, and more. | `sudo apt install bsdmainutils` |
 | `apt install` | Installs a **new package** on the system from repositories.| `sudo apt install git` |
 | `apt remove` | Removes an installed **package** but keeps configuration files. | `sudo apt remove nano` |
 | `apt purge` | Removes a package **along with its configuration files**. | `sudo apt purge nano` |
