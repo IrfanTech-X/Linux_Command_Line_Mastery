@@ -578,7 +578,7 @@ nano notes.txt
 
 | Command | Description | Example |
 |----------|-------------|----------|
-| `dmesg` | Shows **kernel and boot messages**. | `dmesg | less` |
+| `dmesg` | Shows **kernel and boot messages**. | `dmesg \| less` |
 | `journalctl` | Displays **system logs** on systemd systems. | `journalctl -xe` |
 | `tail -f /var/log/syslog` | Continuously monitors a **log file**. | `tail -f /var/log/syslog` |
 | `uptime` | Shows how long the system has been running and load averages. | `uptime` |
