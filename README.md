@@ -134,7 +134,7 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 | `uptime` | Shows how long the **system has been running** and load averages. | `uptime` |
 | `lsblk` | Lists all **block storage devices** like hard drives or USBs. | `lsblk` |
 | `stat` | Displays detailed **file metadata** such as size, permissions, and timestamps. | `stat file.txt` |
-| `xargs` | Builds and executes commands using **input from another command**. | `find . -name "*.txt" \| xargs rm` |
+| `xargs` | Builds and executes commands using **input from another command**. | `find . -name "*.txt"` |
 | `cut` | Extracts **specific fields or columns** from a line of text. | `cut -d ':' -f1 /etc/passwd` |
 | `paste` | **Merges lines** from multiple files side by side. | `paste file1 file2` |
 | `tee` | Writes output to **both a file and the screen simultaneously**. | `ls | tee list.txt` |
@@ -148,6 +148,8 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 | `find` | Searches for **files or directories** in a specified location using name patterns, type, size, or other criteria. | `find . -name "*.txt"` |
 | `find` | Searches for a **specific file** in a given directory. | `find /home -name "note.txt"` |
 | `xargs` | Builds and executes commands using **input from another command**. Useful for performing actions on multiple files. | `find . -name "*.txt" | xargs rm` |
+| `echo` | Prints **text or variables** to the terminal. Often used with `xargs` to preview commands. | `find . -name "*.txt" | xargs echo` |
+| `rm` | **Deletes files**. Often combined with `find` and `xargs` to remove multiple files at once. | `find . -name "*.txt" | xargs rm` |
 | `xargs` | Combine `find` and `xargs` to process files efficiently, like viewing or editing multiple files at once. | `find /home -name "*.log" | xargs cat` |
 
 💡 **Tips:**  
