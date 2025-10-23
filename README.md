@@ -292,6 +292,7 @@ nano notes.txt
 | `date` | Prints the **current date and time**. | `date` |
 | `cal` | Displays a **monthly calendar** right in the terminal. | `cal` |
 | `neofetch` | Shows a **summary of OS and hardware info** with a nice logo. | `neofetch` |
+| `screenfetch` | Displays a **summary of your system information** (OS, kernel, CPU, memory, desktop environment, and more) along with your **distribution’s ASCII logo** in the terminal. | `screenfetch` |
 
 💬 **Tip:** Use `watch -n 1 free -m` to continuously monitor memory usage every second.
 ---
