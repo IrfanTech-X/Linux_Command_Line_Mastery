@@ -140,7 +140,23 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 | `tee` | Writes output to **both a file and the screen simultaneously**. | `ls | tee list.txt` |
 
 💬 **Tip:** To quickly check what’s inside your folder, use `ls -lh` to see file sizes in a human-readable format and `ls -lt` to sort by modification time.
+---
+## 🔍 Searching & Acting on Files with `find` and `xargs`
 
+| Command | Description | Example |
+|----------|-------------|----------|
+| `find` | Searches for **files or directories** in a specified location using name patterns, type, size, or other criteria. | `find . -name "*.txt"` |
+| `find` | Searches for a **specific file** in a given directory. | `find /home -name "note.txt"` |
+| `xargs` | Builds and executes commands using **input from another command**. Useful for performing actions on multiple files. | `find . -name "*.txt" | xargs rm` |
+| `xargs` | Combine `find` and `xargs` to process files efficiently, like viewing or editing multiple files at once. | `find /home -name "*.log" | xargs cat` |
+
+💡 **Tips:**  
+- `.` → current directory, `/home` → specific folder.  
+- Always use quotes with wildcards, e.g., `"*.txt"`.  
+- You can replace `rm` or `cat` in `xargs` with any other command, like `mv` or `chmod`.  
+- For safer deletion, first run:  
+  ```bash
+  find . -name "*.txt" | xargs echo
 ---
 ## 📂 Sorting and Removing Duplicates with `sort` & `uniq`
 
