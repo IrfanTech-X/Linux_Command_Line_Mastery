@@ -66,22 +66,6 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 
 ---
 
-## 🌐 Networking
-
-| Command | Description | Example |
-|----------|-------------|----------|
-| `ping` | Sends packets to another host to **test network connectivity**. | `ping google.com` |
-| `ifconfig` | Displays **network interfaces** and IP addresses. | `ifconfig` |
-| `ip addr` | Shows detailed **IP configuration**. | `ip addr show` |
-| `netstat -tuln` | Displays all **active network connections** and listening ports. | `netstat -tuln` |
-| `curl` | Transfers data from a URL; great for testing APIs or downloading small files. | `curl https://example.com` |
-| `wget` | Downloads files from the internet. | `wget https://example.com/file.zip` |
-| `traceroute` | Tracks the **path packets take** to reach a destination host. | `traceroute google.com` |
-| `nslookup` | Looks up DNS information for a domain. | `nslookup google.com` |
-
-💬 **Tip:** Use `ping -c 4 google.com` to send exactly 4 packets instead of pinging forever.
-
----
 ## 🧭 Navigation & File Management
 
 | Command | Description | Example |
