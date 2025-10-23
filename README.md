@@ -137,7 +137,7 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 | `xargs` | Builds and executes commands using **input from another command**. | `find . -name "*.txt"` |
 | `cut` | Extracts **specific fields or columns** from a line of text. | `cut -d ':' -f1 /etc/passwd` |
 | `paste` | **Merges lines** from multiple files side by side. | `paste file1 file2` |
-| `tee` | Writes output to **both a file and the screen simultaneously**. | `ls | tee list.txt` |
+| `tee` | Writes output to **both a file and the screen simultaneously**. | `ls \| tee list.txt` |
 
 💬 **Tip:** To quickly check what’s inside your folder, use `ls -lh` to see file sizes in a human-readable format and `ls -lt` to sort by modification time.
 ---
