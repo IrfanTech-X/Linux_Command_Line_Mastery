@@ -134,7 +134,7 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 | `uptime` | Shows how long the **system has been running** and load averages. | `uptime` |
 | `lsblk` | Lists all **block storage devices** like hard drives or USBs. | `lsblk` |
 | `stat` | Displays detailed **file metadata** such as size, permissions, and timestamps. | `stat file.txt` |
-| `xargs` | Builds and executes commands using **input from another command**. | `find . -name "*.log" | xargs rm` |
+| `xargs` | Builds and executes commands using **input from another command**. | `find . -name "*.txt" \| xargs rm` |
 | `cut` | Extracts **specific fields or columns** from a line of text. | `cut -d ':' -f1 /etc/passwd` |
 | `paste` | **Merges lines** from multiple files side by side. | `paste file1 file2` |
 | `tee` | Writes output to **both a file and the screen simultaneously**. | `ls | tee list.txt` |
