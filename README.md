@@ -294,6 +294,18 @@ nano notes.txt
 | `neofetch` | Shows a **summary of OS and hardware info** with a nice logo. | `neofetch` |
 
 💬 **Tip:** Use `watch -n 1 free -m` to continuously monitor memory usage every second.
+---
+## ⚙️ System Information with `uname`
+
+| Command | Description | Example |
+|----------|-------------|----------|
+| `uname` | Displays the **kernel name** of your Linux system. | `uname` |
+| `uname -r` | Shows the **kernel version** currently running. | `uname -r` |
+| `uname -a` | Displays **all system information**, including kernel name, version, machine hardware, OS, and more. | `uname -a` |
+
+💡 **Tips:**  
+- Use `uname -m` to check **machine hardware name** (e.g., x86_64).  
+- Use `uname -s` for just the **kernel name**, and `uname -v` for **kernel version details**.
 
 ---
 
