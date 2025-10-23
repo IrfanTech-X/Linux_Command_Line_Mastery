@@ -328,7 +328,7 @@ nano notes.txt
 | `renice` | Changes the **priority** of an existing process. | `renice 5 -p 2345` |
 | `top` | Displays **real-time process activity**. | `top` |
 | `htop` | Interactive viewer for processes. | `htop` |
-| `at` | Schedules a command to **run once at a specific time**. | `echo "backup.sh" | at 23:00` |
+| `at` | Schedules a command to **run once at a specific time**. | `echo "backup.sh" \| at 23:00` |
 | `batch` | Queues jobs to **run when system load is low**. | `echo "update.sh" | batch` |
 | `cron` | Runs scheduled tasks **at fixed times**. | `crontab -e` |
 | `crontab -l` | Lists the **current user’s cron jobs**. | `crontab -l` |
