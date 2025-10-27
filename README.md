@@ -35,15 +35,16 @@ Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desir
 
 | Category | Description |
 |-----------|-------------|
+| 🔐 **User Management** | Manage users, groups, and permissions |
 | 🧭 **Navigation & File Management** | Move around directories and manage files |
 | ⚙️ **System Information** | Learn about your system’s hardware and performance |
-| 🔐 **User Management** | Manage users, groups, and permissions |
+| 💻 **Process & Job Management** | Manage users, groups, and permissions |
+| 🌐 **Networking Commands** | Configure and test network connections |
+| 🔒 **File Permissions & Ownership** | Manage running processes and system resources |
 | 📦 **Package Management** | Install, update, and remove software |
-| 🌐 **Networking** | Configure and test network connections |
-| 🧰 **Process Control** | Manage running processes and system resources |
-| 📝 **File Editing & Viewing** | Edit, view, and analyze text files |
+| 🗃️ **Archiving & Compression** | Edit, view, and analyze text files |
 | 🖥️ **Disk Management** | Manage storage devices and usage |
-| 🚀 **Shortcuts & Tricks** | Speed up your workflow with quick commands |
+| 🖥️ **System Monitoring & Logs** | Speed up your workflow with quick commands |
 
 ---
 
