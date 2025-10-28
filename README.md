@@ -6,8 +6,8 @@ This repository contains **300+ essential Linux commands**, organized by categor
 ---
 
 ## 📖 About This Repository
-The Linux command line is powerful — mastering it opens doors to automation, development, and system administration.  
-This project helps students, developers, and enthusiasts strengthen their Linux skills through hands-on command examples.
+The Linux command line is a powerful tool that empowers users to automate tasks, manage systems efficiently, and develop with precision.
+This repository contains over 300 practical Linux commands designed to help students, developers, and tech enthusiasts strengthen their command-line skills through real, hands-on examples.
 
 ---
 ## 🧑‍💻 Change Username (Recommended - Simple)
