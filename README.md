@@ -3,8 +3,7 @@
 # 🐧 Linux Command Line Mastery  
 ### Learn, Practice & Master the Terminal
 
-Welcome to **Linux Command Line Mastery**, your ultimate companion for becoming confident and powerful in the Linux ecosystem.  
-Whether you're a **beginner**, **developer**, **sysadmin**, or **tech enthusiast**, this repository is designed to make you *fall in love with the terminal*.
+Welcome to **Linux Command Line Mastery**, your ultimate companion for becoming confident and powerful in the Linux ecosystem.  Whether you're a **beginner**, **developer**, **sysadmin**, or **tech enthusiast**, this repository is designed to make you *fall in love with the terminal*.
 
 ---
 
