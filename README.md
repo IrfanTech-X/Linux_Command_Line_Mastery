@@ -13,9 +13,9 @@ Whether you're a **beginner**, **developer**, **sysadmin**, or **tech enthusiast
 [![Stars](https://img.shields.io/github/stars/IrfanTech-X/Linux_Command_Line_Mastery?style=social)](https://github.com/IrfanTech-X/Linux_Command_Line_Mastery)
 [![Forks](https://img.shields.io/github/forks/IrfanTech-X/Linux_Command_Line_Mastery?style=social)](https://github.com/IrfanTech-X/Linux_Command_Line_Mastery/fork)
 [![Watchers](https://img.shields.io/github/watchers/IrfanTech-X/Linux_Command_Line_Mastery?style=social)](https://github.com/IrfanTech-X/Linux_Command_Line_Mastery/watchers)  
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/IrfanTech-X/Linux_Command_Line_Mastery/pulls)
-![Linux](https://img.shields.io/badge/OS-Linux%20%F0%9F%90%A7-blue)
-![Commands](https://img.shields.io/badge/Commands-300%2B-orange)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-blue.svg)](https://github.com/IrfanTech-X/Linux_Command_Line_Mastery/pulls)
+![Linux](https://img.shields.io/badge/OS-Linux%20%F0%9F%90%A7-purple)
+![Commands](https://img.shields.io/badge/Commands-350%2B-navy)
 
 
 ---
