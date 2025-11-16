@@ -44,6 +44,24 @@ This repository gives you **hands-on**, **easy-to-understand**, and **practical 
 
 
 ---
+
+## 🗂️ Command Categories
+
+| Category | Description |
+|-----------|-------------|
+| 🔐 **User Management** | Manage users, groups, and permissions |
+| 🧭 **Navigation & File Management** | Navigate directories and manage files |
+| ⚙️ **System Information** | Check system hardware, OS, and performance details |
+| 💻 **Process & Job Management** | Manage processes, jobs, and running tasks |
+| 🌐 **Networking Commands** | Configure, monitor, and test network connections |
+| 🔒 **File Permissions & Ownership** | Control file permissions and file ownership |
+| 📦 **Package Management** | Install, update, and remove software packages |
+| 🗃️ **Archiving & Compression** | Compress, archive, and extract files |
+| 💾 **Disk Management** | Manage disks, partitions, and storage usage |
+| 🖥️ **System Monitoring & Logs** | Monitor system activity and view logs |
+
+---
+
 ## 🧑‍💻 Change Username (Recommended - Simple)
 
 ### ⏱ Step-by-Step (Takes 2–3 Minutes)
@@ -64,25 +82,6 @@ Run these commands one by one in your **Terminal** (`Ctrl + Alt + T`):
 Replace `OLDNAME` with your **current username** and `NEWNAME` with your **desired new username**.
 
 ---
-
-## 🗂️ Command Categories
-
-| Category | Description |
-|-----------|-------------|
-| 🔐 **User Management** | Manage users, groups, and permissions |
-| 🧭 **Navigation & File Management** | Navigate directories and manage files |
-| ⚙️ **System Information** | Check system hardware, OS, and performance details |
-| 💻 **Process & Job Management** | Manage processes, jobs, and running tasks |
-| 🌐 **Networking Commands** | Configure, monitor, and test network connections |
-| 🔒 **File Permissions & Ownership** | Control file permissions and file ownership |
-| 📦 **Package Management** | Install, update, and remove software packages |
-| 🗃️ **Archiving & Compression** | Compress, archive, and extract files |
-| 💾 **Disk Management** | Manage disks, partitions, and storage usage |
-| 🖥️ **System Monitoring & Logs** | Monitor system activity and view logs |
-
----
-
-## 💡 Example Commands
 
 ## 🔐 User Management
 
